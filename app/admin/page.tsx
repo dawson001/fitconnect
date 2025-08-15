@@ -230,7 +230,7 @@ export default function AdminPage() {
         const error = await response.json();
         showMessage('error', error.message || 'Erro ao criar réplica');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao criar réplica');
     }
     setLoading(false);
@@ -252,7 +252,7 @@ export default function AdminPage() {
       } else {
         showMessage('error', 'Erro ao deletar réplica');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao deletar réplica');
     }
     setLoading(false);
@@ -313,7 +313,7 @@ export default function AdminPage() {
         const error = await response.json();
         showMessage('error', error.message || 'Erro ao enviar treinamento avançado');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao enviar treinamento avançado');
     }
   };
@@ -351,7 +351,7 @@ export default function AdminPage() {
       } else {
         showMessage('error', 'Erro ao enviar treinamento');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao enviar treinamento');
     }
     setLoading(false);
@@ -365,7 +365,7 @@ export default function AdminPage() {
         setFileContent(data.content);
         setEditingFile(filePath);
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao carregar arquivo');
     }
   };
@@ -388,7 +388,7 @@ export default function AdminPage() {
       } else {
         showMessage('error', 'Erro ao salvar arquivo');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao salvar arquivo');
     }
   };
@@ -431,7 +431,7 @@ export default function AdminPage() {
         const error = await response.json();
         showMessage('error', error.message || 'Erro ao deletar conteúdo');
       }
-    } catch (error) {
+    } catch {
       showMessage('error', 'Erro ao deletar conteúdo de treinamento');
     }
     setDeletingItems(prev => {

@@ -13,9 +13,10 @@ const sensayClient = createClient({
 
 export async function DELETE(
   request: NextRequest,
-  { params }: { params: { uuid: string } }
+  context: { params: Promise<{ uuid: string }> }
 ) {
   try {
+    const params = await context.params;
     const { uuid } = params;
 
     await deleteV1ReplicasByReplicaUuid({

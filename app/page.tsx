@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from 'react';
+import Image from 'next/image';
 import { createClient } from '../sensay-sdk/client';
 import { postV1ReplicasByReplicaUuidChatCompletions } from '../sensay-sdk';
 import { SENSAY_CONFIG, REPLICA_UUID, validateConfig } from '../lib/config';
@@ -642,9 +643,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
-                <img 
+                <Image 
                   src="/FitConnect.svg" 
                   alt="FitConnect" 
+                  width={32}
+                  height={32}
                   className="h-8 w-auto"
                 />
               </div>
@@ -848,9 +851,11 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="col-span-1 md:col-span-2">
                 <div className="mb-4 filter invert">
-                  <img 
+                  <Image 
                     src="/FitConnect.svg" 
                     alt="FitConnect" 
+                    width={40}
+                    height={40}
                     className="h-10 w-auto"
                   />
                 </div>

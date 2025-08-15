@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextResponse } from 'next/server';
 import { createClient } from '@/sensay-sdk/client';
 import { getV1Replicas, postV1Replicas, postV1ReplicasByReplicaUuidTraining, putV1ReplicasByReplicaUuidTrainingByTrainingId } from '@/sensay-sdk';
 import * as fs from 'fs';
