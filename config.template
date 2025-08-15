@@ -1,0 +1,13 @@
+# FitConnect Configuration Template
+# Copy this file to .env.local and update the values
+
+# Sensay API Configuration
+NEXT_PUBLIC_SENSAY_API_URL=https://api.sensay.io
+NEXT_PUBLIC_SENSAY_ORG_SECRET=your_organization_secret_here
+NEXT_PUBLIC_SENSAY_API_VERSION=2025-05-01
+
+# Default Replica UUID for client chat
+NEXT_PUBLIC_REPLICA_UUID=your_replica_uuid_here
+
+# Admin Configuration
+ADMIN_PASSWORD=your_admin_password_here 
